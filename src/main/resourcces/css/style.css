@@ -1,0 +1,127 @@
+/* CONTENEDORES PRINCIPALES */
+.main-container {
+    -fx-background-color: #121212;
+}
+
+.sidebar {
+    -fx-background-color: #000000;
+}
+
+.logo-text {
+    -fx-text-fill: #1DB954;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 10 0;
+}
+
+/* NAVEGACIÓN LATERAL */
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #b3b3b3;
+    -fx-alignment: CENTER_LEFT;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.nav-button:hover {
+    -fx-text-fill: white;
+}
+
+/* Ikonli: Cambio de color del icono en la barra lateral al pasar el mouse */
+.nav-button:hover .ikonli-font-icon {
+    -fx-icon-color: white;
+}
+
+/* PANEL CENTRAL */
+.main-title {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.player-bar {
+    -fx-background-color: #181818;
+    -fx-border-color: #282828;
+    -fx-border-width: 1 0 0 0;
+}
+
+/* BOTONES DE CONTROL (Atrás/Adelante) */
+.control-button {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+/* Ikonli: Color base gris para iconos de control */
+.control-icon-color {
+    -fx-icon-color: #b3b3b3;
+}
+
+/* Ikonli: Los iconos de control se iluminan al pasar el mouse */
+.control-button:hover .control-icon-color {
+    -fx-icon-color: white;
+}
+
+/* BOTÓN PLAY (Verde tipo Spotify) */
+.play-button {
+    -fx-background-radius: 50;
+    -fx-min-width: 50px;
+    -fx-max-width: 50px;
+    -fx-min-height: 50px;
+    -fx-max-height: 50px;
+    -fx-background-color: #1DB954;
+    -fx-cursor: hand;
+}
+
+.play-button:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-background-color: #1ed760;
+}
+
+/* Ikonli: Color negro para el icono de PLAY (para contrastar con el fondo verde) */
+.play-icon-color {
+    -fx-icon-color: black;
+}
+
+/* INFO DE CANCIÓN ACTUAL */
+.current-song-title {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.current-song-artist {
+    -fx-text-fill: #b3b3b3;
+    -fx-font-size: 11px;
+}
+
+/* TABLA DE CANCIONES */
+.song-table {
+    -fx-background-color: transparent;
+    -fx-base: #121212;
+    -fx-control-inner-background: #121212;
+}
+
+.song-table .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.song-table .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: #282828;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* SLIDERS (Progreso y Volumen) */
+.slider .track {
+    -fx-background-color: #404040;
+}
+.slider .thumb {
+    -fx-background-color: #b3b3b3;
+}
+.slider:hover .thumb {
+    -fx-background-color: #1DB954;
+}
+
+/* Estilo general para cualquier icono de Ikonli que no tenga clase específica */
+.ikonli-font-icon {
+    -fx-icon-color: #b3b3b3;
+}
